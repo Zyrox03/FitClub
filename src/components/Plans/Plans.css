@@ -1,0 +1,177 @@
+.Plans {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.Plans-header {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+}
+
+.planCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.planCards .plan {
+
+    width: 15rem;
+    height: 30rem;
+    background: var(--caloryCard);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 2rem;
+}
+
+.planCards .plan:nth-of-type(2) {
+
+    width: 18rem;
+    height: 35rem;
+    background: var(--planCard);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 2rem;
+}
+
+.planCards .plan:nth-of-type(2) svg {
+    fill: white;
+
+}
+
+.planCards .plan:nth-of-type(2) button {
+    color: var(--orange);
+}
+
+.planCards .plan svg {
+    fill: var(--orange);
+    width: 3rem;
+    height: 3rem;
+}
+
+.planCards .plan span:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.planCards .plan span:nth-of-type(2) {
+    font-size: 3.5rem;
+    font-weight: bold;
+
+}
+
+.planCards .plan li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.planCards .plan li img {
+    width: 20px;
+}
+
+.planCards .plan ul {
+    padding: 0;
+    list-style: none;
+}
+
+.seeMore {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.seeMore img {
+    width: 15px;
+}
+
+.blur-plan-1 {
+    width: 17rem;
+    height: 25rem;
+    left: 10%;
+}
+
+.blur-plan-2 {
+    width: 17em;
+    height: 25em;
+    right: 10%;
+}
+
+
+.blur-plan-3 {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+
+    .Plans-header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    .planCards {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blur-plan-1 {
+        display: none;
+
+    }
+
+    .blur-plan-3 {
+        display: flex;
+        width: 17em;
+        height: 25em;
+        left: 25%;
+        top: 50%;
+    }
+
+    .blur-plan-2 {
+        display: none;
+    }
+
+  
+}
+
+@media screen and (max-width: 350px) {
+
+    .planCards .plan:nth-of-type(2) {
+
+        width: 14rem;
+        height: 35rem;
+     
+    }
+
+    .planCards .plan{
+        width: 12.5rem;
+        height: 35rem;
+    }
+    
+}
